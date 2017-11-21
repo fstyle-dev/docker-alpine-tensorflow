@@ -13,7 +13,7 @@ RUN apk add --update --no-cache \
 	  libtool \
       build-base \
       zlib-dev \
-      eigen-dev@testing \
+      # eigen-dev@testing \
       mlocate@testing \
       curl \
       ca-certificates \
