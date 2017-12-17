@@ -38,7 +38,7 @@ ENV CXX /usr/bin/clang++
 
 # configure only shared or only static library
 RUN cmake .. && \
-	make -j"$(getconf _NPROCESSORS_ONLN)" && \
+	make -j"$(getconf _NPROCESSORS_ONLN)" | grep "warning" && \
 	rm -rf ~/.cache && \
 	make install
 
